@@ -27,7 +27,8 @@ markdown: kramdown
 paginate: 10
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "atom-one-light"
+highlightjs_theme: "tomorrow"
+# highlightjs_theme: "atom-one-light"
 # highlightjs_theme: "zenburn"
 
 

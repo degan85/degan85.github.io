@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "test"
+author: Degan
+categories: test
+tags:	test
+comments: true
+---

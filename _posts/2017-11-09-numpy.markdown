@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "numpy 기초"
+author: Degan
+categories: data
+tags:	python data numpy
+comments: true
+---
+
+{% jupyter_notebook numpy_1.ipynb %}
+
+---
+
+## Reference
+
+[파이썬 라이브러리를 활용한 데이터 분석](http://www.hanbit.co.kr/store/books/look.php?p_code=B6540908288)

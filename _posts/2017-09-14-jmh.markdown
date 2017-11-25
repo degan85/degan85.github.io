@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "JMH"
+author: Degan
+categories: JAVA
+tags:	jmh benchmark
+comments: true
+---
+
+작성한 메서드의 성능을 구체적인 숫자로 보고 싶은 경우가 있습니다. 저 같은 경우는 String과 StringBuffer를 사용할 때 차이, 어떤 collection을 사용할까 등 선택에 따른 성능을 확인하고 싶을 때 그렇습니다. 보통은 System 클래스를 사용해서 확인했었습니다.
+보통은 `currentTimeMillis()`와 `nanoTime()`을 사용합니다.
+
+## System Class
+
+{% highlight java %}
+long startTime = System.currentTimeMillis();
+	//test code
+long endTime = System.currentTimeMillis();
+long elapsedTime = endTime-startTime;
+System.out.println("milli= "+elapsedTime);
+{% endhighlight %}
+
+`nanoTime()`는 JDK 5.0부터 추가된 메서드입니다. 만든 목적은 수행된 시간 측정이기 때문에 오늘의 날짜를 알아보는 데 사용하면 안 됩니다. 많지는 않지만, 결과에 차이가 발생하므로 JDK 5.0이상이라면 시간 측정용으로 만들어진 nanoTime() 메서드를 사용하기를 권장합니다.
+
+{% highlight java %}
+long startTime = System.nanoTime();
+	//test code
+long endTime = System.nanoTime();
+long elapsedTime = endTime-startTime;
+System.out.println("milli= "+elapsedTime);
+{% endhighlight %}
+
+## JMH
+
+하지만 될 수 있으면 전문 측정 라이브러리를 사용해서 측정하면 더 좋은 것 같습니다.
+다양한 라이브러리가 있지만 자바 성능 튜닝 이야기[^1]에 잘 설명이 나와 있는 JMH(Java Microbenchmark Harness)를 사용해 보기로 했습니다. 
+
+JMH는 JDK를 오픈 소스로 제공하는 OpenJDK에서 만든 성능 측정 라이브러리입니다.
+자세한 설치 방법과 사용 방법은 JMH - Java Microbenchmark Harness[^2]에서 확인하시길 바랍니다. 
+
+### 설치 방법
+
+1. 설치하고자 하는 곳에서 command창을 열고 **mvn command line**을 입력합니다. 
+2. 설치가 완료되면 sample로 있는 `MyBenchmark` class가 있습니다.
+3. **command**에 있는 명령어를 입력합니다.
+
+<script src="https://gist.github.com/degan85/ba30d1eef86b594cb744f47d8dc046e8.js"></script>
+
+---
+## Reference
+
+[^1]:[자바 성능 튜닝 이야기](http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788966260928)
+[^2]:[JMH - Java Microbenchmark Harness](http://tutorials.jenkov.com/java-performance/jmh.html)

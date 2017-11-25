@@ -8,5 +8,5 @@ comments: true
 ---
 
 {% capture includeGuts %}
-{% include post-entry.html %} 
+{% include K-NN.html %} 
 {% endcapture %}

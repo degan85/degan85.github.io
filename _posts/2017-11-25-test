@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "test"
+author: Degan
+categories: machine_learning
+tags:	machine learning knn algorithm 
+comments: true
+---
+
+{% capture includeGuts %}
+{% include post-entry.html %} 
+{% endcapture %}

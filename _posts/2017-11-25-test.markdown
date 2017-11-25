@@ -7,6 +7,4 @@ tags:	machine learning knn algorithm
 comments: true
 ---
 
-{% capture includeGuts %}
 {% include K-NN.html %} 
-{% endcapture %}

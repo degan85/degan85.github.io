@@ -8,7 +8,7 @@ comments: true
 ---
 
 ## 순서
-1. VirtualBox 설치[#1]
+1. [VirtualBox 설치](#1)
 2. Kali Linux 설치 및 설정
 3. XAMPP 설치
 4. dvwa 설치

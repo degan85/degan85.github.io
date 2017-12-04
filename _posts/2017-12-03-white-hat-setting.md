@@ -8,7 +8,7 @@ comments: true
 ---
 
 ## 순서
-1. VirtualBox 설치
+1. VirtualBox 설치[^1]
 2. Kali Linux 설치 및 설정
 3. XAMPP 설치
 4. dvwa 설치
@@ -17,7 +17,7 @@ comments: true
 
 ### 1. VirtualBox 설치
 
-#### - 설치
+#### - [1]:설치
 
 ![VirtualBox_install_1](https://lh3.googleusercontent.com/EIsNBtj_wvBNhPCRZEECl6yzuFI8PDbRfFb348d0c8As_sfX9XVtCfJPFCrjjyOu3IroPqiLYkjjFpKBlnTznNVbhuu2L3mCxocVtzDVQamosPKYTBV7WTMHVuYwqcokeiK5eDMM3BlC4sCrdXrB-dWjTopbbr1RY5RnsMqy4R3Qc4ye3afTRZJFzB86qvuSt38ortN0dryObOzFr--zTsb2u_aPK3VVqXtJ2Abz6IG-g-HvVWR2zT9xuC0A3nlHIhwU4EDrm-znsl8ijEbjinTmRfATSSkVo2l6gJTVztrL5muR13of_Km4tOWGjflvlxvgMtHG8TjMKSJeL8anvAXOGolVE_X3kJlqfZO6C9WJVueQAF9p5NOadT24eErw_WtjSaUiKFT2zBPnjnvzKBcRTvGV4Jc0sJ6SXDTxQbXEEqmHS8zwYuFlfT7SdqrMTFc7JO-cRP9cnVzeUcHhSKiMlAZG-ubIoFnGsfI01STV99u-zEbc0vtA1tg11DLGuBnVm-wsachuCdJN6D_XuEHe24tqRwj0-xm_rVe4BMhHv9qCaAPHnExCLz56aBPEEv_4vS7upJehnFQKZ6zlsdsaX81yUjnzGax1uHnXlA=w944-h423-no)
 ![VirtualBox_install_2](https://lh3.googleusercontent.com/PLzaIpmZKNw-vPVIYNvTds3RLR2GlqYk1B8Q2kKcDHPMyMmR-3ix0aZr3x7BZ0eWSZfX3FVtD2fa7xsUafHWWwl9YSnU2saltWAtGemaveDmKD7cDEhnJbe65XVwNFysNsd-oo05VSiQE2obA1HRkUAVDYx-ad1PvUdV-HgQZ8gb8Syjj8jhvDjs_0ovnIlvMvw1D2Kaobgi5Bt3O_d5YN-wGzBGT4kJVcRUzZM-zY54Hpulb2jQ6vZOPw7Ys2EdIhtoW0icnQ-OFU32XmxO4Dpipb3XnCT1nUr257S6OJ0QnhjzEF90ocATovZt4r6DgY2KQR1Pz_jxwPDbliiA96W_SWRsc8ecFqzGwMC_HkE20NfhetyixpFPrf7dWhaVu3fzyqZ0O-DaX40AmWaQbUsuHlqTtffKEgyY0mMF9ZQ1eZhXvOa87b0D0cUxO4472kyqgT7fHzfvDQFmNyZL1qvskDa0IA5XkQmahFDKPJwPSu1l9r4B9zp4VqTO2poE85j3_d_qJiNXwjQ0fJ2pLpiHRqx4PiYyf8PuIysd4QAIe2-QnapEUt6x_Y081mzAxG7yhXQ8eTVEGkvn5IwLW5WqIWNBSms3LnQxeP13IQ=w944-h467-no)

@@ -33,7 +33,7 @@ HOST 운영체제에 맞게 다운로드하고 usb 사용 등을 위해 All supp
 ![Kali_Linux_install_2](https://lh3.googleusercontent.com/KAnbOV17cd59Y9VxyoB3u9TBiZ80V6z0p5HBvy6FLzRvxWYw6RuKHwnW7a4TLYSKTbJJ4AbIqkBQct-KssDplvc9mr9fcKTAxCu4x0og6DBfirMY51--fUf3AqwSSTqvut1WDy9vRrWQX6hhdS6nu8iJJipP3OiPY-QQ1P4UpqMf4lcHpJS_tornir2eWGH_OGRLkSEF_2kydpR3okKC4xSrPtrF_a6CXrK2Mm5DHMwu-QEP0ot8jOcLwJsLV5GgNUs3gZtgL-SKi2ZVuYvNj2rscE9Xf-KVeFI04kzreiqiZCZn84TtFwdSxavZyO9EGW1HsXfYlEFgnVZlMTPFIEc0f2Dc1TFG6A19mOad93iVDqwgQdrHUlO5smHq22jBsn468jQiisavt28U4rRtNNy0cDbwsJSqViUcgV1428vhpw_Xi8qh7DF0lyIMXBvhoWG32z6_vmmb4XtslPUUAC8zFwnK3E3BXt2VgREVpdtnoG2VAzzJZJNIw6QSHYZSKK1ZY7sqPST_nlfhSFfTE3Unwohx18Bc561VuuOn0V_GcuhCLe53bS8UQLz8o_u4BBFPEcjjZxmjVsChX8-d3X19XrdNGRz-J_bF96LBKA=w944-h459-no)
 ![Kali_Linux_install_3](https://lh3.googleusercontent.com/t9Cs2mXFr9tDZvcu2iuODwsYZXJsKZ43ui7e0N9GBRqzViWZ0KN2ltJd5JXuzG-a81hSCpCsgNdD9skvoBeEoCX_U4pEVKKVIb-NMUNB_acdWod1aLjyvFyBJYWO4ZcbAF-2X6QC2tfajYjz5259dJbYcDyzZ3dHHa0cwwgr71_ZttwiIUaiXP2MjnxNUBgVvmYzO69GVpt8q7lhDT9rX4Fe4iqgQoZt4r1lSHWIHCGdJ1S_62XtQ89HaWih3COf2ex-c5ttosgYhxwgVy0whSY66nxsiNAGOA1zHIWaiW_sobyH1tW1rNfAU_XzGxGLkjaN-Gv8ZiGDzS2lrkaKu6SQB_bclLI-M_aKidMW2gr4NR3guvO3d7oYxzHCwl0vR9HWOAtJscLjI9ZmvL5mKabUFXbS-l4kRKY1EHjqI-OUilmqp4gDyP1dSHDVJmZnrjP9qZn5Mw5tLYhHKGXz0cWFsWtOZb9SIa3hJPA9o1cMxnJG-en6SGQIbDuR1kzSWmE_2qN4j4nEONRtNTBSthm4HkdbpNsicyhdcOcZT9W9JFBLeDMseOjKAUAZiwFY53RvhGpebSIcVxTO3bO4k0t0RoJTtcVuYlO1UhIprg=w944-h478-no)
 
-VirtualBox Images로 다운로드합니다.
+**VirtualBox Images**로 다운로드합니다.
 실행하면 VirtualBox가 열리고 가져오기를 합니다.
 
 ![Kali_Linux_install_4](https://lh3.googleusercontent.com/DDhsBHceaJAhl7gYjUAiK6__mBEE5Wt-XD-2VcLMW75E4fKU4P_KWohSFZ1eNLQytf_1ua82vEC2E8AWCUJwkjw7dRJ-j2DXbs8WN_K4o6KBxDR4W2RE_FVxoV9H2L2HyPQHr64qjuIybh2SCF6KesgmBgTdIQuxPSDb-8eLZVR_clPVpXJIPIng6x1CZR50Fwzb_7oh48eFGfwEdRCizqi2WTsN03kgX8TcCVUClQNz4q75-j5AfsTp0Roja9r6dWG_4YaiMS5V0TZ412O5iGlnbDYtzZMuU3-u5eO4TuTrPaD-mYkjgICpppk7A4cFSRhvYcM69Vk61Y1UTguaEI_4f6bifGcIzaYjSaUgPPBL6XcGr4uYyLUBzfQa-3mzbpzkBhAvHMKXvcL-VTR7w47ORRFS7zu6znZEbhy4bIx1kxJOmz0iFKuvAOgo89nMvCF7TIctTGkuZYej41zJKnP4l1tHv6sdiJ4PBjj8Yyo7-gAvm4AI8_0bCg09aKVXi1FWFLDqWAwXri6mOzfsVZ6fyiybBRrZd2V1cdSfS9DpughNS84XzUOa9eRTq2x1OoCE8OGyWr3Kl--xEtC22T2OIrkQNbSljN2XBjH8qw=w944-h517-no)
@@ -47,7 +47,7 @@ VirtualBox Images로 다운로드합니다.
 초기 비밀번호 : toor
 
 #### - 한글 폰트 설치
-터미널을 열고 `apt-get install -y fonts-nanum1` 입력합니다.
+터미널을 열고 `apt-get install -y fonts-nanum` 입력합니다.
 완료되면 `fc-cache -f -v`를 입력합니다.
 
 **settings**에서 **Resion & Language** -> 맨 아래 **한국어** 설정 -> 다시 시작
@@ -77,7 +77,7 @@ VirtualBox Images로 다운로드합니다.
 #### - 설치
 ![XAMPP_install_1](https://lh3.googleusercontent.com/LCrhW36slCVqXCm7j0ph65wQPk4Vrb8vyqhByQhXXl2K5Z6TuwW6uU3JtsvhYrt5u80P3rR47FnEsNBy_WMH547AOI0j7snqTDDrCEMgeRfjEQ6Cq25O-XYvFnG0OeamCTXw6z3QiEzxIq8A9Nf7v1T0ITVT1WWRs1xJlFBoQmM3dHIkC6QzLFGoBAzYA9e3FsYaX7EfYOZzUxH_qz6qxpwrwFFRfyG8cZ5N6xTOHvDYRgjlrhkXpAJ--TQk_TrGDt3KT7thwOGoA1HUgRBPsDdPfWfV3Y-0dF-9XwuANBzq_oU6xRpzOEZLBIn_Phuo9rBAWaM9HA79CLOKNnFxXzbXYs8K7QbYDusiOW8xW0tXQSwopLYMncLmxEr1Dn_NNeFMTvwpAjhs5kCHX3mKeYYSin4lLZQkkafQw9NfrDvVXheGE2Xzr6-jpv_amI1yjb1p-Dzfe-aWAQD7E4hvH_tM30ApJa-c4Phsj-2AQHZgB_hA8SnGtYckTB7IUGssmvn8R396271-FiL98ImYvP9vLnskocFMMHszcneaMDQd5LO8_E0NjjPRNP9cAM5BB-ql2WRECZPTP1kotWxQrres1u7n3RUCCj0XIS8TSA=w944-h659-no)
 ![XAMPP_install_2](https://lh3.googleusercontent.com/J_VKwNJg5WmfgM4of6kGA1BiTpQT3w2X5aYs5Mnit7qyu0ggJ4JaBVlG-X-p80Y8EObA-__4J7QWY-kIkz0p8mfdviU6u5SxqkQDx8_eb-CFwabwMwKQd6j5c3M_2eM4N-BDltu45MdtG9WmITtRziTU7l2AQ9PFjQmJuRTaQyRKlJQ-Cddu3ftbll7oTsZqSlv4qHRtSYUtfAJvoUCcGeuzLrfR0zOHA9dz34zB6kre1a0qIP56oW5QQZTHv_GCtTwEYjw6pcUXQUK_qLu0MWo4l3yjglfuo-0DhdocZCexhqA6czo19yxh9_6ViEs0d-fXRf25tVIINYipOj2KploNu8wzGxtipOC_XHd32nrv-Mn5TxmgEOuvPYjhuN1ghEPW3cB6ojExd32WSN_854XnEtL-3Oq-QDoU3_8gjYEUzVacP4lij1fZiobchQDPGFRcz_iBapUBBGhKqkdpM308i4Mc3Yxn3H3noGjtOKEXfndq0QPo-lSewo_D5XGWYueMIQmQN-R9xLWcUFIuZeB8OhbLoeXzdpS_JtCunDVLOkEB9Oe6vY04I4OF26-bMW30grAVHfS56jVitxVcJl09F7pmNooMFKheDuwqBw=w944-h500-no)
-(DVWA 지원을 위해 5점대 사용)
+(DVWA 지원을 위해 **5**점대 사용)
 
 터미널에서 `cd Downloads/` 입력합니다.
 `chmod +x ./xampp-linux-5.6.23-0-installer.run`를 입력해서 권한을 줍니다.
@@ -106,10 +106,10 @@ VirtualBox Images로 다운로드합니다.
 브라우저에서 localhost/dvwa 이동.(빨간색인 부분을 녹색으로 변경해야 함)
 
 https://www.google.com/recaptcha/admin 접속
-label에 **dvwa** 입력 -> domain에 'localhost' -> KEY 생성
-터미널에서 `cd /opt/lampp/htdocs/dvwa/` 실행 - > `gedit config/config.inc.php` 실행
-reCAPTCHA 검색 -> public_key와 private_key 입력 -> 위에 db_password값 삭제(기본값)
-**Create / Reset Database** 클릭
+* label에 **dvwa** 입력 -> domain에 'localhost' -> KEY 생성
+* 터미널에서 `cd /opt/lampp/htdocs/dvwa/` 실행 - > `gedit config/config.inc.php` 실행
+* reCAPTCHA 검색 -> public_key와 private_key 입력 -> 위에 db_password값 삭제(기본값)
+* **Create / Reset Database** 클릭
 
 ---
 

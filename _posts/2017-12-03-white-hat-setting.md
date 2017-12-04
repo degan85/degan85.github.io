@@ -9,13 +9,14 @@ comments: true
 
 ## 순서
 1. [VirtualBox 설치](#vb_install)
-2. Kali Linux 설치 및 설정
-3. XAMPP 설치
-4. dvwa 설치
+2. [Kali Linux 설치 및 설정](#ki_install)
+3. [XAMPP 설치](#xampp_install)
+4. [dvwa 설치](#dvwa_install)
 
 ---
 
-<a name="vb_install"></a>### 1. VirtualBox 설치
+<a name="vb_install"></a>
+### 1. VirtualBox 설치
 
 #### - 설치
 
@@ -25,7 +26,9 @@ HOST 운영체제에 맞게 다운로드하고 usb 사용 등을 위해 All supp
 둘 다 다운로드하고 설치를 진행합니다.
 
 ---
-#### 2. Kali Linux 설치 및 설정
+
+<a name="ki_install"></a>l
+### 2. Kali Linux 설치 및 설정
 
 #### - 설치
 
@@ -72,6 +75,7 @@ HOST 운영체제에 맞게 다운로드하고 usb 사용 등을 위해 All supp
 
 ---
 
+<a name="xampp_install"></a>
 ### 3. XAMPP 설치
 
 #### - 설치
@@ -90,6 +94,7 @@ HOST 운영체제에 맞게 다운로드하고 usb 사용 등을 위해 All supp
 
 ---
 
+<a name="dvwa_install"></a>
 ### 4. DVWA 설치
 
 브라우저에서 http://localhost/dashboard/ 접속

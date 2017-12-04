@@ -27,7 +27,7 @@ HOST 운영체제에 맞게 다운로드하고 usb 사용 등을 위해 All supp
 
 ---
 
-<a name="ki_install"></a>l
+<a name="ki_install"></a>
 ### 2. Kali Linux 설치 및 설정
 
 #### - 설치

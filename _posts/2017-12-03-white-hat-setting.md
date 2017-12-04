@@ -97,7 +97,7 @@ HOST 운영체제에 맞게 다운로드하고 usb 사용 등을 위해 All supp
 (phpMyAdmin 클릭)
 
 ![DVWA_install_2](https://lh3.googleusercontent.com/edyLJa8tFJesmvXt8ipGExLYaNP17VieOjx3t8GY_2LNyr03YoQp_6LOlzdgHKPJIg1HhCA1pA80XdqyDXUOwaPbbVDO87mwzT3w2IckHHZvZdxbW2W-P6LNBQYuCSl19T7qQzJdvVSHbzEXAXz5DUbaFaajF6M8rQUjPHnREjrmtXIQBqI9b3_ez60JJfFlrtNQdhrtb9K_2vgHlPuHbM6NeqZ04D0n5tZQDCVhZCwZwpvEf4ShAuvV1pmS0o66KhmB1EG5BILD_Lx32t2TJR3jeBO2rIMwx2Tz3LAUqe4-0q68irx2_4-bcfPPjTp6M9ifwNotcdbaZ1wQMKHxv1VLRj6iNZcKUmwkkFABLqfiX26ldSlljWFRv35X-X6_ijeQgEioohavHiSgXJVHJhCptNa92bl6NSyIENhV_kN5o_XgbrtelLs6mzCydAOpcbGzDbQWVl8VvXJ3aTYxKAf-b7a0u3wSJw4lYvYMi6PcIPR_lfSE6bki5IkfmVPACbeemoTkJHAOoSkVdq1PT_jy3X0DEw5JoD7d51lR60_7vke7vEq5qWWzo3h5tGKYCY-_c62l0xXNAAW3Cxl_qt2skcWyZB1s-2qHVQa_og=w944-h927-no)
-(db에 dbwa 데이터베이스 만들기)
+(db에 dvwa 데이터베이스 만들기)
 
 * 브라우저에서 dvwa github 검색(https://github.com/ethicalhack3r/DVWA/releases) -> **zip파일 다운로드**
 * 압축 풀고 브라우저에서 접속 할 수 있게 폴더 이동(터미널에서 `mv DVWA-1.9 /opt/lampp/htdocs/dvwa` 입력)

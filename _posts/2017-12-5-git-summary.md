@@ -56,29 +56,29 @@ comments: true
 <a name="principle"></a>
 ## 5. 동작 원리
 
-	- snapshot
-		* 데이터를 가져오거나 프로젝트를 저장할 때마다 그 시점의 파일에 대해 스냅샷을 저장
-		* 변경되지 않은 파일은 저장하지 않고 이전에 지정한 동일한 파일을 링크
-	- checksum
-		* 데이터를 저장하기 전에 체크섬을 구함
-		* 이 체크섬을 통해 데이터를 관리
-		* SHA-1 해쉬 사용(16진수 문자 40개로 구성된 문자열)
-		* 파일 이름이 아닌 컨텐츠의 해쉬 값을 저장
-		* 파일명이 변경되도 내용이 동일하면 같은 해쉬
-	- sections(영역)
-		* Working Directory(저장소에서 클론을 생성)
-		* Staging Area(내가 만든 파일 add)
-		* Repository(staging area에서 저장소로 커밋)
+- snapshot
+  * 데이터를 가져오거나 프로젝트를 저장할 때마다 그 시점의 파일에 대해 스냅샷을 저장
+  * 변경되지 않은 파일은 저장하지 않고 이전에 지정한 동일한 파일을 링크
+- checksum
+  * 데이터를 저장하기 전에 체크섬을 구함
+  * 이 체크섬을 통해 데이터를 관리
+  * SHA-1 해쉬 사용(16진수 문자 40개로 구성된 문자열)
+  * 파일 이름이 아닌 컨텐츠의 해쉬 값을 저장
+  * 파일명이 변경되도 내용이 동일하면 같은 해쉬
+- sections(영역)
+  * Working Directory(저장소에서 클론을 생성)
+  * Staging Area(내가 만든 파일 add)
+  * Repository(staging area에서 저장소로 커밋)
 
 ---
 
 <a name="config"></a>
 ## 6. 설정 파일 정보 확인
-	- 책임성을 유지하기 위해 commit한 사람의 email과 이름이 반드시 필요함.
-	- USER_HOME/.gitconfig
-	- Working Directory/XXX/.git/config(우선순위가 더 높음)
-	- .gitconfig 파일일 없을 경우 사용자 email과 이름 등록해서 사용함
-		ex) `git config --global user.name username`, `git config --global user.email user@email.com`
+- 책임성을 유지하기 위해 commit한 사람의 email과 이름이 반드시 필요함.
+- USER_HOME/.gitconfig
+- Working Directory/XXX/.git/config(우선순위가 더 높음)
+- .gitconfig 파일일 없을 경우 사용자 email과 이름 등록해서 사용함
+  ex) `git config --global user.name username`, `git config --global user.email user@email.com`
 		
 ---
 

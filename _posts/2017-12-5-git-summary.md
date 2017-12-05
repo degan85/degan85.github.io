@@ -78,7 +78,8 @@ comments: true
 - USER_HOME/.gitconfig
 - Working Directory/XXX/.git/config(우선순위가 더 높음)
 - .gitconfig 파일일 없을 경우 사용자 email과 이름 등록해서 사용함
-  ex) `git config --global user.name username`, `git config --global user.email user@email.com`
+  * `git config --global user.name username` 
+  * `git config --global user.email user@email.com`
 		
 ---
 

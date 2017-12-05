@@ -14,16 +14,19 @@ comments: true
 4. [branch 전략(Gitflow)](#gitflow)
 5. [동작원리](#principle)
 6. [설정 파일 정보 확인](#config)
+
 ---
 
 <a name="history"></a>
 ## 1. History
 리눅스 토발즈가 리눅스 커널 프로젝트를 위해 버전 관리 시스템으로 개발(2005년)
+
 ---
 
 <a name="git_vs_svn"></a>
 ## 2. Git vs SVN 트렌드 비교
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1225_RC05/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"git","geo":"","time":"today 5-y"},{"keyword":"svn","geo":"","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today 5-y,today 5-y&q=git,svn","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+
 ---
 
 <a name="advantage"></a>
@@ -34,6 +37,7 @@ comments: true
 - 동시 다발적인 개발
 - 책임성
 - 대형 프로젝트를 효율적으로 지원
+
 ---
 
 <a name="gitflow"></a>
@@ -46,6 +50,7 @@ comments: true
 
 ![gitflow](https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAywAAAAJDkyMTNlNTY1LTliY2MtNDYyMy1hNGM4LWY4ZGI1NmFhN2NiNQ.png)
 출처:[GitFlow: A Better Branching Strategy for Your Projects - Introduction to the Branching Model](https://www.linkedin.com/pulse/gitflow-better-branching-strategy-your-projects-model-kodagoda)
+
 ---
 
 <a name="principle"></a>
@@ -60,10 +65,11 @@ comments: true
 		* SHA-1 해쉬 사용(16진수 문자 40개로 구성된 문자열)
 		* 파일 이름이 아닌 컨텐츠의 해쉬 값을 저장
 		* 파일명이 변경되도 내용이 동일하면 같은 해쉬
-	-sections(영역)
+	- sections(영역)
 		* Working Directory(저장소에서 클론을 생성)
 		* Staging Area(내가 만든 파일 add)
 		* Repository(staging area에서 저장소로 커밋)
+
 ---
 
 <a name="config"></a>
@@ -72,7 +78,7 @@ comments: true
 	- USER_HOME/.gitconfig
 	- Working Directory/XXX/.git/config(우선순위가 더 높음)
 	- .gitconfig 파일일 없을 경우 사용자 email과 이름 등록해서 사용함
-		ex) git config --global user.name username, git config --global user.email user@email.com
+		ex) `git config --global user.name username`, `git config --global user.email user@email.com`
 		
 ---
 

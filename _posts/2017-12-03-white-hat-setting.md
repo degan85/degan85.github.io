@@ -22,9 +22,9 @@ comments: true
 
 ![VirtualBox_install_1](https://degan85.github.io/assets/white-hat-setting-1.png)
 ![VirtualBox_install_2](https://degan85.github.io/assets/white-hat-setting-2.png)
-- HOST 운영체제에 맞게 다운로드 
-- usb 사용 등을 위해 All supported platforms도 같이 다운로드
-- 둘 다 다운로드하고 설치를 진행
+* HOST 운영체제에 맞게 다운로드 
+* usb 사용 등을 위해 All supported platforms도 같이 다운로드
+* 둘 다 다운로드하고 설치를 진행
 
 ---
 
@@ -37,43 +37,43 @@ comments: true
 ![Kali_Linux_install_2](https://degan85.github.io/assets/white-hat-setting-4.png)
 ![Kali_Linux_install_3](https://degan85.github.io/assets/white-hat-setting-5.png)
 
-- **VirtualBox Images**로 다운로
-- 실행하면 VirtualBox가 열리고 가져오기 클릭
-
+* **VirtualBox Images**로 다운로드
+* 실행하면 VirtualBox가 열리고 가져오기 클릭
+* 마우스 오른쪽을 누르면 시작, 정지, 설정 등을 할 수 있음
 ![Kali_Linux_install_4](https://degan85.github.io/assets/white-hat-setting-6.png)
-- 마우스 오른쪽을 누르면 시작, 정지, 설정 등을 할 수 있음
 
+* 설정을 누른 후 **시스템** 클릭
+* 기본 메모리를 여유롭게(2GB정도) 선택
 ![Kali_Linux_install_5](https://degan85.github.io/assets/white-hat-setting-7.png)
-- 설정을 누른 후 **시스템** 클릭
-- 기본 메모리를 여유롭게(2GB정도) 선택
 
-- 시작하면 사용자 ID와 비밀번호를 입력해야함
-- 초기 사용자 ID : root
-- 초기 비밀번호 : toor
+* 시작하면 사용자 ID와 비밀번호를 입력해야함
+* 초기 사용자 ID : root
+* 초기 비밀번호 : toor
 
 #### - 한글 폰트 설치
-- 터미널을 열고 `apt-get install -y fonts-nanum` 입력
-- 완료되면 `fc-cache -f -v`를 입력
+* 터미널을 열고 `apt-get install -y fonts-nanum` 입력
+* 완료되면 `fc-cache -f -v`를 입력
 
-- **settings**에서 **Resion & Language** -> 맨 아래 **한국어** 설정 -> 다시 시작
+* **settings**에서 **Resion & Language** -> 맨 아래 **한국어** 설정 -> 다시 시작
 
 #### - 한영 변환
 ##### 터미널에서 
-- `apt-get install -y nabi` 실행 
-- `apt-get install -y im-config`을 실행 
-- `im-config` 실행 -> 확인 -> yes -> **hungul** 선택 -> 확인 -> 로그아웃
-- `shift` + `space`로 한영 변환 
+* `apt-get install -y nabi` 실행 
+* `apt-get install -y im-config`을 실행 
+* `im-config` 실행 -> 확인 -> yes -> **hungul** 선택 -> 확인 -> 로그아웃
+* `shift` + `space`로 한영 변환 
 
 ![Kali_Linux_install_4](https://degan85.github.io/assets/white-hat-setting-8.png)
 
 #### - 스냅샷 복원지점
+* 스냅샷 -> 찍기 
+* 스냅샷을 찍어 복원지점을 생성
 ![Kali_Linux_install_5](https://degan85.github.io/assets/white-hat-setting-9.png)
-(스냅샷 -> 찍기) 
-- 스냅샷을 찍어 복원지점을 생성 
-
+ 
+* 복원 시 마우스 오른쪽 '복원' 선택
 ![Kali_Linux_install_6](https://degan85.github.io/assets/white-hat-setting-10.png)
-(복원 시 마우스 오른쪽 '복원' 선택)
-- 문제가 발생 할 경우 복원지점으로 복원할 수 있음
+
+* 문제가 발생 할 경우 복원지점으로 복원할 수 있음
 
 ---
 
@@ -82,11 +82,12 @@ comments: true
 
 #### - 설치
 ![XAMPP_install_1](https://degan85.github.io/assets/white-hat-setting-11.png)
-![XAMPP_install_2](https://degan85.github.io/assets/white-hat-setting-12.png)
-(DVWA 지원을 위해 **5**점대 사용)
 
-- 터미널에서 `cd Downloads/` 입력
-- `chmod +x ./xampp-linux-5.6.23-0-installer.run`를 입력해서 권한을 줌
+* DVWA 지원을 위해 **5**점대 사용
+![XAMPP_install_2](https://degan85.github.io/assets/white-hat-setting-12.png)
+
+* 터미널에서 `cd Downloads/` 입력
+* `chmod +x ./xampp-linux-5.6.23-0-installer.run`를 입력해서 권한을 줌
 
 #### - 실행(터미널)
 * `ls -al opt/xampp`
@@ -99,12 +100,12 @@ comments: true
 <a name="dvwa_install"></a>
 ### 4. DVWA 설치
 
-브라우저에서 http://localhost/dashboard/ 접속
+* 브라우저에서 http://localhost/dashboard/ 접속
 ![DVWA_install_1](https://degan85.github.io/assets/white-hat-setting-13.png)
 (phpMyAdmin 클릭)
 
+* db에 dvwa 데이터베이스 만들기
 ![DVWA_install_2](https://degan85.github.io/assets/white-hat-setting-14.png)
-(db에 dvwa 데이터베이스 만들기)
 
 * 브라우저에서 dvwa github 검색(https://github.com/ethicalhack3r/DVWA/releases) -> **zip파일 다운로드**
 * 압축 풀고 브라우저에서 접속 할 수 있게 폴더 이동(터미널에서 `mv DVWA-1.9 /opt/lampp/htdocs/dvwa` 입력)

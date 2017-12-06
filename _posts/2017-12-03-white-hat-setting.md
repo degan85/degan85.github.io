@@ -101,8 +101,9 @@ comments: true
 ### 4. DVWA 설치
 
 * 브라우저에서 http://localhost/dashboard/ 접속
+* phpMyAdmin 클릭
 ![DVWA_install_1](https://degan85.github.io/assets/white-hat-setting-13.png)
-(phpMyAdmin 클릭)
+
 
 * db에 dvwa 데이터베이스 만들기
 ![DVWA_install_2](https://degan85.github.io/assets/white-hat-setting-14.png)

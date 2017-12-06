@@ -39,12 +39,12 @@ comments: true
 ![preferences](https://degan85.github.io/assets/proxy-burp-suite-1.png)
 
 - Advanced -> Network -> Settings
-![settings](https://lh3.googleusercontent.com/4qOdkUdwnkt-uver5cbBPxZniKYyoW_AkTceW9wBO_MHrHOcSm6sXiE-7hoCobHredzXEvF_2t16Zwq8nPDaLAxnNntNZyjHbacLfNHXNCFZVjljBQtYSurIZxYBrGUIJd545r_kazYywAW8nI0-lDvr9lzdpkiSaHiJY7Xn1qU1eH31INtrPUOdyKt8nmtz5DA29BdJlm2TBhUdfDkb68pY6P8pB__tweHCBjf6XuWeXFkZBscIQhqhNL_lwihCnlM-44c-Eb375e9CnZYe-0iAHHWIJRIRV5dvEriX3jIALNL7eznEO7075MCulAdM_TiW4sZ-anvHVkIloiBClL5XloiZhRLp-fcZWw-TLaZ9YNFfr3c0qVl-dtaTl3SrnxlCVplS0LY5giDENwQ-Gxtf-8ClpUPtPkACrYs2FT1Y2kTINioD5FgRstphaV-GXlrKJtTOUBqwoX_yfjNUuUYvdROY95LTgzIblDyyEnKqENw2f5SNtsuOGZny1ORwH2aydmPizHKxmjZes5zFyy24iHJ29aCauAWf3h-3gh2y5mRnOL5eon_LsNsXXbnJpK2mklvRuqj6aieehoaaEKdL_2dYWjgX2h3IWNxniA=w944-h934-no)
+![settings](https://degan85.github.io/assets/proxy-burp-suite-2.png)
 
 - Manual proxy configuration를 체크 
 - HTTP Proxy에 버프스위트 interface에 있던 ip와 포트번호 입력
 - No Proxy for란은 지움
-![settings](https://lh3.googleusercontent.com/kELZWckPlp3eprXclVIjtqeAlgFcXvrC_wSh9qDwWXKh1V8ppW_cowp6he_S07rrIL4DrOtOuenzXbyL7gC_1B-BSd6nEGI5FOMahIWw7RH6zEiWn6v7oqUC8FZMMA1E0l6pxWFWr05bONBFApIqvc8kSgNyZ2oSJzqs2fNY8XC2hykVJESigpR7BsECZ-qGMooiWGo9lB3C-6_bKr7qTF5-W2ph-bj3owAp7EgSY9RPZ4wTs6Hp_N6qPSjwVg35dKZh7V0Ze2cl_tTB38DiIdyOWzHDsgECQ8_IpnB2kkh4Qw8CcuG739rR3Pfx7DLSN_1H4Ptt52nAySBSqxJ7jBfxwUWXC3Ncpqrq6TPx6Ve7iLJK3MgEBm3kldTG7bSqi7DbZCnWslChIb7xzHNjXYhS7c3w9RtJgeJQ_v-kQVUCErJ6_tg17OCpte6DL3sQoF4_Ep8bktAmXbOwbl3RLbTIFIvA0KDgCabhmMMHVRKr7vyurRHXwHmOhLNsCUCOaGoNhkhKek_WBsOlRtlc1DB8IsbCcwLCcRw0breOSSxM7pXwcfBjSFsX3o6B1gTE5NgHTOx56TuECNVOOeRxsD68H2IA5vHpSqU7lrHD1A=w944-h814-no)
+![settings](https://degan85.github.io/assets/proxy-burp-suite-3.png)
 
 ---
 
@@ -58,11 +58,11 @@ comments: true
 - `intercept is off`를 하면 프록시를 통해 전송되기는 하지만 화면에 내용을 표시하지 않음
 - 브라우저에서 **localhost/dvwa/** 접속
 - intercept된 화면
-![intercept](https://lh3.googleusercontent.com/oCORAXjawEQNvQzArwpileNIWcE9ih5dbFuLwJclIHOjC2S_5sJOjnPAwjPgm4vJMt9lrCBVqGm6b68G0h7v7uu-oVbLgOEmw7QsBkXGY8W0e_gvW4cnEfj-8EGf48nCVd3U50CtMGA8N30ucIhNQyqSmzBpvwL65olx5zuhKIdlzzy8E_dvxNxeFg-XyBtKYskvucaR3fOQRoqVdI3a0IHLEU-HmtuoidtQD_sBTDaLmwDbK980xIXDqZ2HSNPoN5fl_Q0CWUblMdFWR2zCYmGM2Ee0J-ia1tuhlhlxzWIy4TVir-Uc0gs_SillZFH54d-Sr3NxbNJIyVvjAgw3voZD_gqP2aNwKMJk64QTB5objL_WQufgUOKlgKZ2rKUrCP7LJKufrYxx-5D2ZZhR0Ra7iPrWCSXe52N1_yKeaym7656jwiSkQ4ETjPfSkQ483FAyDa_F5uxpfXznlAzq3ejn2ZJElBXiTFBTvYL_jj4Q7RKNBEQke2dPIb7pgkH0wJw9vhKt89WpJFXtAFPQ0CazCHKT0h49u83GH49b_dDV7JG6xPqLFvHf0EEP4GuG9ZuIMTyGdxD1Qd3ntzZaMNOxoJGmTZPcuFNU_rpgrg=w944-h873-no)
+![intercept](https://degan85.github.io/assets/proxy-burp-suite-4.png)
 
 - intercept돼있는 동안 브라우저는 화면이 표시되지 않음
 - 버프스위트에서 `Forward`를 누르면 그제서야 브라우저 화면이 나옴
-![connected_dvwa](https://lh3.googleusercontent.com/GCnIPl_DrDdJ4k8L8Y2Tn1RuyatRA9YWD05qNh6JY-vyMigkT3a8hQnHHHZMDgFhqAQ2BknImv7QrWJ2IxUZUhE83p1nI-BFp1WAakZX_gd9XphY0CnIuVtiZSdsV7U6gUmMMTdJaHQ9Ulfo9dROgP80qu1JRslV3MjTif9mR6BX8jkixZpY2sNZpwGWJ3zFngOIAm5vriaE4SZiYNMSFP_NISthXYWxzZkUW2asThN_V3okUow5KRiLaTkUw6ttblk7chPWPP29LebKPfcutUq6C9gmBOHo7zV4Oa04gDaWpjuqOY3u9QNgrp1ofrY7x4J0jnnF5Ur8teNCeFE6_XyGEhd3gwe8iwcZBUVVaym2TvAydIRRJSWz5UqNpfWiDVzgyCPaN5dGTi0AWOJ2SoszGL1-CuyH6POUH39Af4OW2xUnJKY8owO0Fr00ktW90FsPtFmBgxSabruDAoBszjmKPhwB_58peAwmblOKJ__Q81Lm4QgEySVA2oSE0ZEQo2ishZPQ6fXo1fRRvTedT7BzKogtzu2tQos8kCSiUFYMo0rRUySpomv5MIwID1eyxDipOkHMwPnqfh9fczBTN2hhpS3A1bwFyJNkkvWo6Q=w944-h893-no)
+![connected_dvwa](https://degan85.github.io/assets/proxy-burp-suite-5.png)
 
 - `Drop`을 누르면 아애 메시지를 차단함
 
@@ -110,7 +110,7 @@ Content-Type: text/html; charset=UTF-8
 
 <a name="burp_suite_etc"></a>
 ## 6. 버프스위트 그외 기능들
-![site_map](https://lh3.googleusercontent.com/F6w6C8uT9pah8viozcNBpdZ2fNsOT-eggsr1_1mgf-ttLmZKjDNoVeVyvEjEABM0Au9fYT7Sc9TJXxSf08TPG0BDtP9Ch5ro9whiQF6C0eTWSbNBB4mDdC4DTk4E-esZ0LqpfXAv6kEwVO0s5XF0TG97V7EtktP9IDwHwK7H8YnVa5LdSXH49ufJm3FXKkvAKufICw6exNWEkSYu2pupSm5vW6_TZJVV6-1qSHOA-SYRpdjCc1SO66cxb87rwHL4b_86xPtYXNuwhSubCdxRTqQATt7qEthS3tHI5Bo6aA8PjVrKDt71ZWkzHQELPTeYO6BlrCk9Jvrg5Gdn3zziwbHSzaaQdKEkpZeE7ICnQPwc8Gv08vbEAZtbt8q5lJG4ia-8fMAJdN67SG7Dw1-mSiGqdmnkGw0kNxD5h7VUp1vI5quAwJoxjoifi0M943isx3nQgk9oCNG_aHYFKBhNzT_Umhq4ob0qsAhX8J2Oxpr0GEzMeKn0nBYk7PfBLSLuAF0nSB7A5Ccu5_McEmCd7D1XLlOLn8ejch2xjBB0jm3dV9XNsxEiSzKesSThB8pRh1MJC-FtZ0D9B12jKHEeTmZrH7TFJIcY_7AwdVf86g=w944-h543-no)
+![site_map](https://degan85.github.io/assets/proxy-burp-suite-6.png)
 - `Target`
 	* 접속한 호스트들과 url들을 트리로 보여줌
 	* 선명한 글씨는 직접 방문한 곳을 나타냄 
@@ -134,7 +134,7 @@ Content-Type: text/html; charset=UTF-8
 ## 7. 실습 후
 - 브라우저를 이용할때 계속 정지 할 수 있음
 - 프록시 설정을 초기화 해줘야함	
-![after_proxy](https://lh3.googleusercontent.com/6xv8HX4oZiB2BPryqHqyaco65YJ_u-UgMuBrH-dM1kKDBkepvTEaz_-j9Si7v66bY22XEX5MK_zWNiuwFj6-rJAYxZTGIDYSmBXGHHO5nipLxmeI6Ye8IZZvT0TaTh_2J7-5vu9l0KolO-6OHGeNQKjRLHlrihY7S2_CpJwu1DIbI8OfAEbq5_mX1hu8Ac9cSR3q4LrgYOSjcdMD7nFnvSXFGqLoO3aJCVZWvtc09d_Ar_HX7TfW_ejUnG_p7oXj0uNqiCT1ZrwukRXBqkf8tBcWPNBY9aEMYXxHH2bwc9YLxHBq5xxIIV0Ju-ILhnElDpnSo2Zypz14t3JDVU8XEU24y12lboGK5tDLRHuiz6VWlnEzgxmd6oCTyubS7URrM1Rrmw2yAudlpWkWVR1N2cHUIy--KnKurIZOS_OaLPGcYiPkNCkOEFOPOr_q5vCDd44RyULfLMV4GNqxgoD_WXQO35D3QHbz4jvTeGyVgcakT2ufE3-s3Mthj5nPlbG-5a2WI2Ek2XfbeEDdSDBtnzkhSqnyQneJgyfeEpCpy-eE7HtzpYBey9E6hVnNlMmc1-0AIPLSTBW0yYhMSrNeb2mUsZSCGLjLgkRQEEFnKg=w944-h860-no)
+![after_proxy](https://degan85.github.io/assets/proxy-burp-suite-7.png)
 
 ---
 

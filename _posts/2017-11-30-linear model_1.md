@@ -6,6 +6,7 @@ categories: machine_learning
 tags:	jupyter python notebook machine learning
 original_extension: ipynb
 comments: true
+use_math: true
 ---
 
 In[

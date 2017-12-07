@@ -34,7 +34,7 @@ rc('font', family=font_name)
  선형 모델을 위한 일반화된 예측 함수
 
  $$
- \hat{y} = w_0 \times x_0+w_1 \times x_1+...+w_p \times x_p+b
+  \hat{y} = w_0 \times x_0+w_1 \times x_1+...+w_p \times x_p+b
  $$
 
 

@@ -59,6 +59,7 @@ tem/
 
 
 - 새로운 파일을 생성하고 `git status`를 실행
+-  파일을 staging area로(탐지하기 위해) add 하는 방법이 써져있음
 
 ```bash
 Untracked files:
@@ -67,10 +68,8 @@ Untracked files:
         index.html
 ```
 
--  파일을 staging area로(탐지하기 위해) add 하는 방법이 써져있음
-
-
 - `git add index.html`을 진행한 후 `git status`를 실행
+- staging area에서 제거하기 위해 사용하는 명령이 써져있음
 
 ```bash
 Changes to be committed:
@@ -78,8 +77,6 @@ Changes to be committed:
 
         new file:   index.html
 ```
-
-- staging area에서 제거하기 위해 사용하는 명령이 써져있음
 
 ---
 
@@ -98,6 +95,15 @@ git add -i
 - 4번(**add untracked**)을 누르고 원하는 파일만 번호를 눌러 추가
 - 종료하려면 엔터를 한번 더 누르고 `q`를 입력 
 
+```bash
+$ git add -i
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now>
+```
+
 ---
 
 <a name="commit"></a>
@@ -108,6 +114,7 @@ git add -i
 - 저장하지 않으면 커밋이 취소 됨
 - `git commit -m [커밋 메시지]`를 입력하면 터미널에서 바로 메시지 입력 후 커밋 됨
 - 한번 Repository에 올린 파일이 다시 수정되면 add부터 다시 해야 함
+- `git commit -a -m [커밋 메시지]`를 입력하면 자동으로 해당 파일들을 add하고 커밋함
 
 ```bash
 Changes not staged for commit:
@@ -117,7 +124,6 @@ Changes not staged for commit:
         modified:   index.html
 ```
 
-- `git commit -a -m [커밋 메시지]`를 입력하면 자동으로 해당 파일들을 add하고 커밋함
 - [Git의 기초 - 수정하고 저장소에 저장하기](https://git-scm.com/book/ko/v1/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)
 
 ---
@@ -178,7 +184,7 @@ Date:   Fri Dec 8 09:12:35 2017 +0900
 ## diff
 - 다른 commit과 Working 디렉토리를 비교하는 명령
 - `git diff` : 현재 브랜치의 마지막 commit과 차이점 비교
-- `git diff[Commit ID]` : 특정 commit과의 차이점 비교
+- `git diff [Commit ID]` : 특정 commit과의 차이점 비교
 - `git diff [Commit ID] -- [파일경로]` : 특정 commit과 특정 파일의 차이점 비교
 
 ---

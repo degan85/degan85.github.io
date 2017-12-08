@@ -2,7 +2,7 @@
 layout: post
 title:  "Git 기초 명령어 정리"
 author: Degan
-categories:  
+categories: git 
 tags:	git init status add merge commit ignore
 comments: true
 ---

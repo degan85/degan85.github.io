@@ -1,0 +1,45 @@
+
+# DVWA
+
+>Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
+
+>The aim of DVWA is to practice some of the most common web vulnerability, with various difficultly levels, with a simple straightforward interface
+
+- web  해킹을 실습 할 수 있도록 제작
+
+- 초기 id : admin
+- password : password
+
+- view source는 현재 페이지 소스
+- view help에서는 공격 중 도움말
+- DVWA security : 보안 레벨 설정 가능
+	- Low
+	- medium
+	- high
+	- Impossible
+
+## 브루트포스 공격
+- 사용자 패스워드 알아내기 위한 공격
+- 하나하나 패스워드 계속 대입
+	- 알파벳 순
+	- 딕셔너리 공격(자주쓰는 것 이용)
+
+- 알파벳 순
+- 특수 문자 없을 때 min, max =4 일때 :  1,679,616개의 경우의 수
+- 특수문자(*&) 추가, max를 5로 변경하면 81,320,304의 경우의 수
+- 앞에 a부터 하나씩 공격. 언젠가는 성공
+
+- 딕셔너리
+- 통계적으로 많이 사용하는 단어들의 리스트를 사용
+- list를 받아서 사용
+
+- 공격 대응 방법
+	- level을 medium으로 올려서 확인
+		- 잘못된 password를 입력했더니 응답이 조금 느리게 옴
+		- 응답 소스에 `sleep( 2 )`를 줘서 공격 속도를 늦추게 됨
+	- level을 high로 올림
+		- 응답 소스에 `sleep( rand(0,3) )` 줌
+		- 해커가 일정한 시간이 지연 되면 실패인 것을 알 수 있으므로 실패시 랜덤하게 응답 시간을 보냄
+	- 3번 틀릴 경우 15분 대기
+		- 거의 블루트 포스 방법으로는 해킹이 불가능
+		- 해커가 일부러 패스워드를 틀려서 사용자가 접속 못하게 할 수 있음

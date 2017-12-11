@@ -10,7 +10,7 @@ comments: true
 - 사용자 패스워드 알아내기 위한 공격
 - 하나하나 패스워드 계속 대입
 	- 알파벳 순
-	- 딕셔너리 공격(자주쓰는 것 이용)
+	- 딕셔너리 공격(자주쓰는 단어 이용)
 
 - 브라우저에 버프스위트 interface 설정
 - 퍼프스위트 프록시 `intercept is off`
@@ -25,7 +25,7 @@ comments: true
 ![brute-force](https://degan85.github.io/assets/brute-force-1.png)
 
 - 공격할 변수들이 자동 선택됨
-- 비밀번호만 공격할 것이므로 'Clear`를 누르고 내가 입력했던 비밀번호(wwwww)만 선택해서 `Add` 클릭
+- 비밀번호만 공격할 것이므로 `Clear`를 누르고 내가 입력했던 비밀번호(wwwww)만 선택해서 `Add` 클릭
 ![brute-force](https://degan85.github.io/assets/brute-force-2.png)
 
 - 'Payload' 탭 클릭
@@ -33,11 +33,11 @@ comments: true
 ### 알파벳 순
 - `payload type`을 'Brute force`선택
 - 'Character set'에 다양하게 넣을 문자열 입력
-- `Min length`에 최소 입력 길이 , 'Max length`에 최대 입력 길이를 써 넣음
+- `Min length`에 최소 입력 길이 , `Max length`에 최대 입력 길이를 써 넣음
 	- 특수 문자 없을 때 min, max =4 일때 :  1,679,616개의 경우의 수
 	- 특수문자(*&) 추가, max를 5로 변경하면 81,320,304의 경우의 수
 	- 비밀번호 생성할 때 길이를 6이상 특수 문자, 숫자를 포함해야 하는 이유를 알 수 있음
-- 'Start attack` 실행
+- `Start attack` 실행
 - 앞에 a부터 하나씩 공격. 언젠가는 성공
 	- aaaa -> baaa -> caaa ...
 ![brute-force](https://degan85.github.io/assets/brute-force-3.png)

@@ -32,7 +32,7 @@ comments: true
 
 ### 알파벳 순
 - `payload type`을 'Brute force`선택
-- 'Character set'에 다양하게 넣을 문자열 입력
+- `Character set`에 다양하게 넣을 문자열 입력
 - `Min length`에 최소 입력 길이 , `Max length`에 최대 입력 길이를 써 넣음
 	- 특수 문자 없을 때 min, max =4 일때 :  1,679,616개의 경우의 수
 	- 특수문자(*&) 추가, max를 5로 변경하면 81,320,304의 경우의 수

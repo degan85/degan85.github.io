@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Github basic"
+title:  "Command injection 공격"
 author: Degan
-categories:  git
-tags:	github push pull fetch remote clone request
+categories: white-hat
+tags:	command injection white hacker
 comments: true
 ---
 

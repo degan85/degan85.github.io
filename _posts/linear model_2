@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "linear model_2"
+title: "machine learning linear model_2"
 author: Degan
 categories: machine_learning
 tags:	jupyter python notebook machine learning
@@ -2894,3 +2894,8 @@ IyMip+IaKNUdIUSjlHKi2uMgovrGACUiIloENpMnIiJaBAYoERHRIjBAiYiIFoEBSkREtAgMUCIi
 okX4PzKTO6FCHX4IAAAAAElFTkSuQmCC
 )
 
+---
+
+## Reference
+
+[파이썬 라이브러리를 활용한 머신러닝](http://www.hanbit.co.kr/store/books/look.php?p_code=B6119391002)

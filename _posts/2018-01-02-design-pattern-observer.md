@@ -146,6 +146,8 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement{
 - interface가 아니라서 `WeatherData`에서 **확장**(상속)을 해야 함
 - 언제 Observer한테 연락할지만 알려주면 **API가 알아서 처리**
 
+---
+
 - WeatherData
 - 다음 예제는 push 방식
 
@@ -165,7 +167,7 @@ public class WeatherData extends Observable{
 	}
 
 	private void measurementsChanged() {
-		setChanged();// 상태가 바뀐것을 알림
+		setChanged();
 		notifyObservers();
 	}
 

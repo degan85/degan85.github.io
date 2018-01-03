@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "[강의]임백준의 데이터과학자를 꿈꾸는 히치하이커를 위한 안내서"
-date:   2017-06-15
 author: Degan
 categories: machine_learning
 tags:	lecture, data deeplearning machine learning

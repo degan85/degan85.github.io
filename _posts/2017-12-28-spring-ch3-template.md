@@ -15,36 +15,38 @@ comments: true
 
 ```java
 public void deleteAll() trows SQLException {
-	Connection c = dataSource.getConnection();
+    Connection c = dataSource.getConnection();
 
-	PreparedStatement ps = c.prepareStatement("delete from users");
-	ps.executeUpdate();
+    PreparedStatement ps = c.prepareStatement("delete from users");
+    ps.executeUpdate();
 
-	ps.close();
-	c.close();
+    ps.close();
+    c.close();
+}
 ```
 
 - 예외 처리
 ```java
 public void deleteAll() trows SQLException {
 		
-		Connection c = null;
-		PreparedStatement ps = null;
-		
-		try {
-			c = dataSource.getConnection();
-			ps = c.prepareStatement("delete from users");
-			ps.executeUpdate();
-			
-		} catch (SQLException e) {
-			throw e;
-		} finally {
-			if(ps != null) { try { ps.close(); } catch(SQLException e) {} }
-			if(c != null) { try { c.close(); } catch(SQLException e) {} }
-		}
-	}
+    Connection c = null;
+    PreparedStatement ps = null;
+
+    try {
+      c = dataSource.getConnection();
+      ps = c.prepareStatement("delete from users");
+      ps.executeUpdate();
+
+    } catch (SQLException e) {
+      throw e;
+    } finally {
+      if(ps != null) { try { ps.close(); } catch(SQLException e) {} }
+      if(c != null) { try { c.close(); } catch(SQLException e) {} }
+    }
+}
 ```
-- `finally`안에도 `try-catch`해야 함
+
+- `finally`안에도 `try-catch`해야 함 ([try with resource](https://degan85.github.io/java/2017/06/15/try-with-resource.html) 참조)
 
 ### 템플릿 메소드 패턴
  * 상속을 통해 기능을 확장
@@ -91,22 +93,21 @@ public class DeleteAllStatement implements StatementStrategy {
 		PreparedStatement ps = c.prepareStatement("delete from users");
 		return ps;
 	}
-	
 }
 ```
 
 ```java
 public void deleteAll() throws SQLException {
-		...
-		try {
-			c = dataSource.getConnection();
+	...
+	try {
+		c = dataSource.getConnection();
 			
-			StatementStrategy strategy = new DeleteAllStatement();
-			ps = strategy.makePreparedStatement(c);
+		StatementStrategy strategy = new DeleteAllStatement();
+		ps = strategy.makePreparedStatement(c);
 			
-			ps.executeUpdate();
-		}catch (SQLException e) {
-		...
+		ps.executeUpdate();
+	}catch (SQLException e) {
+	...
 ```
 
 - 개선해야 하는 이유
@@ -122,29 +123,29 @@ public void deleteAll() throws SQLException {
 - 결국 전략 패턴의 장점을 일반적으로 활용할 수 있도록 만든 구조
 
 ```java
-	public void deleteAll() throws SQLException {
-		StatementStrategy strategy = new DeleteAllStatement();
-		jdbcContextWithStatementStrategy(st);
-	}
+public void deleteAll() throws SQLException {
+    StatementStrategy strategy = new DeleteAllStatement();
+    jdbcContextWithStatementStrategy(st);
+}
 ```
 
 ```java
-	public void jdbcContextWithStatementStrategy(StatementStrategy stmt) throws SQLException {
-		Connection c = null;
-		PreparedStatement ps = null;
+public void jdbcContextWithStatementStrategy(StatementStrategy stmt) throws SQLException {
+    Connection c = null;
+    PreparedStatement ps = null;
 
-		try {
-			c = this.dataSource.getConnection();
-			ps = stmt.makePreparedStatement(c);
-			ps.executeUpdate();
-			
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			if(ps != null) { try { ps.close(); } catch(SQLException e) {} }
-			if(c != null) { try { c.close(); } catch(SQLException e) {} }
-		}
-	}
+    try {
+      c = this.dataSource.getConnection();
+      ps = stmt.makePreparedStatement(c);
+      ps.executeUpdate();
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    } finally {
+      if(ps != null) { try { ps.close(); } catch(SQLException e) {} }
+      if(c != null) { try { c.close(); } catch(SQLException e) {} }
+    }
+}
 ```
 
 - 개선
@@ -161,12 +162,13 @@ public void deleteAll() throws SQLException {
 
 ---
 
-#### 전략 패턴의 기본 구조에 익명 내부 클래스를 활용한 방식
-#### 이런 방식을 스프링에서는 템플릿/콜백 패턴이라고 부름
-#### 전략 패턴의 컨텍스트를 템플릿
-#### 익명 내부 클래스로 만들어진 오브젝트를 콜백
+### 템플릿/콜백
+- 전략 패턴의 기본 구조에 익명 내부 클래스를 활용한 방식
+- 이런 방식을 스프링에서는 템플릿/콜백 패턴이라고 부름
+- 전략 패턴의 컨텍스트를 템플릿
+- 익명 내부 클래스로 만들어진 오브젝트를 콜백
 
-![템플릿/콜백](http://cfile29.uf.tistory.com/image/122C37544D3535FB1FE5CF)
+![템플릿/콜백](https://degan85.github.io/assets/templateCallback.jpeg)
 
  ---
  
@@ -181,26 +183,26 @@ public void deleteAll() throws SQLException {
 public class Calculator {
 
 	public Integer calSum(String filepath) throws IOException {
-		BufferedReader br = null;
-		
-		try {
-			br = new BufferedReader(new FileReader(filepath));
-			Integer sum = 0;
-			String line = null;
-			while((line = br.readLine()) != null) {
-				sum += Integer.valueOf(line);
-			}
-			return sum;
-		} catch (IOException e) {
-			e.printStackTrace();
-			throw e;
-		} finally {
-			if(br != null) { // BufferReader 오브젝트가 생성되기 전에 예외가 발생할 수도 있음
-				try{ br.close(); } 
-				catch(IOException e) {System.out.println(e.getMessage()); }
-			}
-		}
-	}
+      BufferedReader br = null;
+
+      try {
+        br = new BufferedReader(new FileReader(filepath));
+        Integer sum = 0;
+        String line = null;
+        while((line = br.readLine()) != null) {
+          sum += Integer.valueOf(line);
+        }
+        return sum;
+      } catch (IOException e) {
+        e.printStackTrace();
+        throw e;
+      } finally {
+        if(br != null) { // BufferReader 오브젝트가 생성되기 전에 예외가 발생할 수도 있음
+          try{ br.close(); } 
+          catch(IOException e) {System.out.println(e.getMessage()); }
+        }
+      }
+}
 ```
 
 ### 더하기 말고 숫자를 이용한 기능들 추가 요청
@@ -212,14 +214,14 @@ public class Calculator {
 - 인터페이스
 ```java
 public interface BufferedReaderCallBack {
-	Integer doSomethingWithReader(BufferedReader rd) throws IOException;
+	  Integer doSomethingWithReader(BufferedReader rd) throws IOException;
 }
 ```
 
 - 반복되는 템플릿
 ```java
 private Integer fileReadTemplate(String filepath, BufferedReaderCallBack callback) throws IOException {
-		BufferedReader br = null;
+    BufferedReader br = null;
 		try {
 			br = new BufferedReader(new FileReader(filepath));
 			int ret = callback.doSomethingWithReader(br);	// 콜백 오브젝트 호출
@@ -231,9 +233,9 @@ private Integer fileReadTemplate(String filepath, BufferedReaderCallBack callbac
 			if(br != null) {
 				try{ br.close(); } 
 				catch(IOException e) {System.out.println(e.getMessage()); }
-			}
 		}
 	}
+}
 ```
 
 - 수정된 `calSum` 메소드
@@ -241,18 +243,18 @@ private Integer fileReadTemplate(String filepath, BufferedReaderCallBack callbac
 ```java
 public Integer calSum(String filepath) throws IOException {
 		
-		BufferedReaderCallBack sumCallBack =  new BufferedReaderCallBack() {
-			public Integer doSomethingWithReader(BufferedReader rd) throws NumberFormatException, IOException {
-				Integer sum = 0;
-				String line = null;
-				while((line = rd.readLine()) != null) {
-					sum += Integer.valueOf(line);
-				}
-				return sum;
-			}
-		};
-		return fileReadTemplate(filepath, sumCallBack);
-	}
+    BufferedReaderCallBack sumCallBack =  new BufferedReaderCallBack() {
+      public Integer doSomethingWithReader(BufferedReader rd) throws NumberFormatException, IOException {
+        Integer sum = 0;
+        String line = null;
+        while((line = rd.readLine()) != null) {
+          sum += Integer.valueOf(line);
+        }
+        return sum;
+      }
+    };
+    return fileReadTemplate(filepath, sumCallBack);
+}
 ```
 
 ### 스프링의 JdbcTemplate
@@ -265,12 +267,15 @@ public Integer calSum(String filepath) throws IOException {
 ```java
 public class UserDao2 {
 
-	private JdbcTemplate jdbcTemplate;
-	
-	public void setDataSource(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
-	}
+    private JdbcTemplate jdbcTemplate;
+
+    public void setDataSource(DataSource dataSource) {
+      this.jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+    ...
+}
 ```
+  
 
 #### update()
 * `StatementStrategy` 인터페이스의 `makePreparedStatement()` 콜백에 대응
@@ -279,21 +284,21 @@ public class UserDao2 {
 * `Connection`을 제공받아서 `PreparedStatement`를 만들어 돌려 준다는 면에서 구조가 동일
 
 ```java
-	public void deleteAll() throws SQLException, ClassNotFoundException {
-			this.jdbcTemplate.update( new PreparedStatementCreator() {
-				public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
-					return con.prepareStatement("delete from users");
-				}
-			});
-		}
+public void deleteAll() throws SQLException, ClassNotFoundException {
+    this.jdbcTemplate.update( new PreparedStatementCreator() {
+      public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+        return con.prepareStatement("delete from users");
+     }
+   });
+}
 ```
  
  - 또는 `JdbcTemplate`의 내장 콜백을 사용하는 메소드 호출로 수정
 
 ```java
-	public void deleteAll() throws SQLException, ClassNotFoundException {
-		this.jdbcTemplate.update("delete from users");
-	}
+public void deleteAll() throws SQLException, ClassNotFoundException {
+   this.jdbcTemplate.update("delete from users");
+}
 ```
 
 #### queryForInt()
@@ -306,25 +311,25 @@ public class UserDao2 {
 ```java
 public int getCount() throws SQLException, ClassNotFoundException {
 		
-		return this.jdbcTemplate.query(new PreparedStatementCreator() {
-			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
-				return con.prepareStatement("select count(*) from users");
-			}
-		}, new ResultSetExtractor<Integer>() {
-			public Integer extractData(ResultSet rs) throws SQLException, DataAccessException {
-				rs.next();
-				return rs.getInt(1);
-			}
-		});
-	}
+    return this.jdbcTemplate.query(new PreparedStatementCreator() {
+      public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+        return con.prepareStatement("select count(*) from users");
+      }
+    }, new ResultSetExtractor<Integer>() {
+      public Integer extractData(ResultSet rs) throws SQLException, DataAccessException {
+        rs.next();
+        return rs.getInt(1);
+      }
+    });
+}
 ```  
 
 - 또는 다음과 같이 호출(**queryForInt**)
 
 ```java
-	public int getCount() {
-		return this.jdbcTemplate.queryForInt("select * from users");
-	}
+public int getCount() {
+    return this.jdbcTemplate.queryForInt("select * from users");
+}
 ```
 
 #### queryForObject()
@@ -336,20 +341,20 @@ public int getCount() throws SQLException, ClassNotFoundException {
 ```java
 public User get(String id) throws ClassNotFoundException, SQLException {
 	
-	return this.jdbcTemplate.queryForObject("select * from users where id =?", new Object[] {id},
-			new RowMapper<User>() { public User mapRow(ResultSet rs, int rowNum) throws SQLException {
-				User user = new User();
-				user.setId(rs.getString("id"));
-				user.setName(rs.getString("name"));
-				user.setPassword(rs.getString("password"));
-				return user;
-				}
-	});
+    return this.jdbcTemplate.queryForObject("select * from users where id =?", new Object[] {id},
+        new RowMapper<User>() { public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+          User user = new User();
+          user.setId(rs.getString("id"));
+          user.setName(rs.getString("name"));
+          user.setPassword(rs.getString("password"));
+          return user;
+          }
+    });
 }
 ```
 
-### 스프링에는 다양한 템플릿/콜백 패턴을 적용한 API가 존재함
-### 클래스 이름이 Template으로 끝나거나 인터페이스 이름이 Callback으로 끝나는 것
+> 스프링에는 다양한 템플릿/콜백 패턴을 적용한 API가 존재함
+> 클래스 이름이 Template으로 끝나거나 인터페이스 이름이 Callback으로 끝나는 것
 
 ## Reference
 

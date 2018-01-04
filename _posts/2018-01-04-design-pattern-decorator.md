@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title:  "Decorator Pattern"
+title:  "[Head First Design Patterns] Decorator Pattern"
 author: Degan
 categories: Design_Pattern
 tags:	java design pattern decorator

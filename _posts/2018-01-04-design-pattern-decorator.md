@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "[Head First Design Patterns] Decorator Pattern"

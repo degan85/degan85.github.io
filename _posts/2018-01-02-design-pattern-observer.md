@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Observer Pattern"
+title:  "[Head First Design Patterns] Observer Pattern"
 author: Degan
 categories: Design_Pattern
 tags:	java design pattern 

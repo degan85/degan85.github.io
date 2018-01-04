@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Strategy Pattern"
+title:  "[Head First Design Patterns] Strategy Pattern"
 author: Degan
 categories: Design_Pattern
 tags:	java design pattern 

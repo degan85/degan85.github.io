@@ -218,12 +218,11 @@ $ java -jar target/파일.jar --server.ip= 192.168.12.1
 	- 현재 폴더
 	- 클래스패스 /config 패키지
 	- 클래스패스 루트
-- 
+- 파일 이름 및 경로 변경
 ```
 $ ./mvnw spring-boot:run -Dspring.config.name=mycfg -Dspring.config.location= file:app/
 ```
-	- 파일 이름 변경
-	- 경로 변경
+
 - 파일 경로 변경하려면 환경 변수 SPRING_CONFIG_LOCATION을 바꿈
 
 #### 프로파일 켜기

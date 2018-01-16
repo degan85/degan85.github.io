@@ -9,7 +9,7 @@ comments: true
 
 ## Test
 
-- spring-boot-starter-test만 있으면 됨
+- **spring-boot-starter-test**만 있으면 됨
 	- JUnit, Objenesis, Hamcrest(Macher), Mockito 등 포함
 - **@RunWith(SpringRunner.class)**
 	- JUnit 라이브러리인 RunWith는 JUnit 내장 실행기 대신
@@ -94,7 +94,7 @@ public class SpringBootWebApplicationTests {
 	- 웹 애플리케이션 구성 정보를 제공
     - MockMvc 인스턴스를 생성할 때 필요
     
-- **HttpMessageConverter<T>**
+- **HttpMessageConverter**
 	- HTTP 요청과 응답 간 메시지를 변환하는 도우미 인터페이스
 	- 여기서는 JSON 형식의 테스트 문자열을 전송하는 데 쓰임
 	- HTTP 메서드에 상관없이 잘 작동

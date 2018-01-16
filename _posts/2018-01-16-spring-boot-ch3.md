@@ -245,8 +245,8 @@ $ ./mvnw spring-boot:run -Dspring.config.name=mycfg -Dspring.config.location= fi
 - STS 사용자는 **spring-boot-configuration-properties** 의존체를 폼 파일에 추가하는 걸 권장
 	- 프로퍼티 코드의 자동완성 기능을 지원 
 - application.properties
-	- 
-```console
+	
+```
 server.ip=192.168.3.5
 
 myapp.server-ip=192.168.34.56

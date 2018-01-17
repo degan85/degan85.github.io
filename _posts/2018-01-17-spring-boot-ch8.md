@@ -67,6 +67,7 @@ spring.data.rest.base-path=/api
 - hibernate.naming-strategy : DB 테이블과 필드의 명명 전략
 - org.hibernate.dialect.MySQL5Dialect : MySql DB 엔진에 최적화한 SQL 생성
 - base-path=/api : HAL + JSON 접속
+
 ---
 
 ### JournalEntry class

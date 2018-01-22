@@ -49,6 +49,15 @@ tem/
 - 확인해서 init 후 ignore 파일을 설정해주는 것이 좋음
 - [.gitignore sample](https://gist.github.com/octocat/9257657), [JAVA .gitignore sample](https://gist.github.com/games647/796e21a661a7a96b1e67d78fa2e1257f), [Android Studio .gitignore sample](https://gist.github.com/iainconnor/8605514) 
 
+- gitignore 파일 적용 안될 때
+
+```
+$ git rm -r --cached . // 현재 Repository의 cache를 모두 삭제한다.
+$ git add . // .gitignore의 파일을 제외하고 다시 track하도록 설정한다.
+
+$ git commit -m "Fixed untracked files"
+```
+
 ---
 
 <a name="status"></a>

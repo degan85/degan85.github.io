@@ -1,6 +1,3 @@
-
-
-
 ---
 layout: post
 title: " Eclipse에 Android 개발환경 구축 "

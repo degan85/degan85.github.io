@@ -2,7 +2,7 @@
 layout: post
 title: " ElasticSearch GET, POST, PUT, DELETE "
 author: Degan
-categories: ELK stack
+categories: ELK
 tags:	elasticsearch get post put delete
 comments: true
 ---

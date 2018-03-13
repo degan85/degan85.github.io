@@ -13,7 +13,7 @@ comments: true
 
 #### 컴포넌트 영역
 
-<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components1.html"></script>
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=component-scope.html"></script>
 
 - 결과
 

@@ -11,9 +11,20 @@ comments: true
 - 조합하여 화면을 구성할 수 있는 블록
 - 화면을 빠르게 구조화하여 일괄적인 패턴으로 개발 가능
 
-#### 지역 컴포넌트와 전역 컴포넌트의 차이
+#### 컴포넌트 영역
 
 <script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components1.html"></script>
+
+- 결과
+
+```
+첫 번째 지역 컴포넌트 : 100
+두 번째 지역 컴포넌트 :
+```
+
+#### 지역 컴포넌트와 전역 컴포넌트의 차이
+
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=global-local-components.html"></script>
 
 - 결과
 
@@ -59,7 +70,7 @@ comments: true
 
 <script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components-event.html"></script>
 
-/* 이벤트 버스 */
+- 이벤트 버스
 
 <script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=eventbus.html"></script>
 

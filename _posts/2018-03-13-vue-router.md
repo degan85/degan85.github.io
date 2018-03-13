@@ -7,7 +7,7 @@ tags:	vue router routing namedview nestedrouter
 comments: true
 ---
 
-####라이팅이란?
+#### 라이팅이란?
 - 웹 페이지 간의 이동 방법
 - SPA(Single Page Application)에서 주로 사용
 - 화면 간의 전환이 매끄러움
@@ -23,7 +23,7 @@ comments: true
   - 페이지 이동 태그
   - 화면에는 `<a>`로 표시
   - 클릭하면 to에 지정한 URL로 이동
-- '<router-view>'
+- `<router-view>`
   - 페이지 표시 태그
   - 변경되는 URL에 따라 해당 컴포넌트를 뿌려주는 영역
 

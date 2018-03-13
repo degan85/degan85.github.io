@@ -10,27 +10,7 @@ comments: true
 #### 뷰 인스턴스의 정의와 속성
 - 뷰로 화면을 개발하기 위해 필수로 생성해야 하는 기본 단위
 
-#### 인스턴스 생성
-
-```html
-/* index.html */
-
-<div id="app">
-	{{ message }}
-</div>
-```
-- 뷰 인스턴스 생성자
-
-```javascript
-// javascript
-
-new Vue({
-	el:'#app',
-	data:{
-  	message: 'Hello Vue.js!'
-  }
-});
-```
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components-event.html"></script>
 
 #### 적용 과정
 1. 뷰 라이브러리 파일 로딩

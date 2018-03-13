@@ -13,46 +13,7 @@ comments: true
 
 #### 지역 컴포넌트와 전역 컴포넌트의 차이
 
-```html
-/* index.html */
-
-<div id="app">
-    <h3>첫 번째 인스턴스 영역</h3>
-    <my-global-component></my-global-component>
-    <my-local-component></my-local-component>
-</div>
-
-<hr>
-
-<div id="app2">
-  	<h3>두 번째 인스턴스 영역</h3>
-  	<my-global-component></my-global-component>
-  	<my-local-component></my-local-component>
-</div>
-```
-
-```javascript
-// javascript
-
-Vue.component('my-global-component', {
-      template: '<div>전역 컴포넌트입니다.</div>'
-    })
-
-    var cmp = {
-      template: '<div>지역 컴포넌트입니다.</div>'
-    }
-
-    new Vue({
-      el: '#app',
-      components: {
-        'my-local-component': cmp
-      }
-    })
-
-    new Vue({
-      el:'#app2'
-    })
-```
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components1.html"></script>
 
 - 결과
 
@@ -89,89 +50,18 @@ Vue.component('my-global-component', {
 ![상하관계](https://kr.vuejs.org/images/props-events.png)
     - 출처: https://kr.vuejs.org
 
-```html
-/* 상위에서 하위로 props 전달 */
+- 상위에서 하위로 props 전달
 
-  <div id="app">
-    <child-component v-bind:propsdata="message"></child-component>
-  </div>
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components-props.html"></script>
 
-  <script>
-    Vue.component('child-component', {
-      props: ['propsdata'],
-      template: '<p>{{ propsdata }}</p>',
-    });
 
-    new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue! passed from Parent Component'
-      }
-    })
-  </script>
-```
+- 하위에서 상위로 이벤트 전달
 
-```html
-/* 하위에서 상위로 이벤트 전달 */
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=components-event.html"></script>
 
-  <div id="app">
-    <child-component v-on:show-log="printText"></child-component>
-  </div>
-
-  <script>
-    Vue.component('child-component', {
-      template: '<button v-on:click="showLog">show</button>',
-      methods: {
-        showLog: function() {
-          this.$emit('show-log');
-        }
-      }
-    })
-
-    var app = new Vue({
-      el: '#app',
-      methods: {
-        printText: function() {
-          console.log("received an event");
-        }
-      }
-    })
-  </script>
-```
-
-```html
 /* 이벤트 버스 */
 
-  <div id="app">
-    <child-component></child-component>
-  </div>
-
-  <script>
-    // 이벤트 버스 생성
-    // 편하지만 컴포넌트가 많아지면 문제 발생
-    // 이 문제를 해결하려면 뷰엑스(Vuex) 사용
-    var eventBus = new Vue();
-
-    Vue.component('child-component', {
-      template: '<div>하위 컴포넌트 영역입니다.<button v-on:click="showLog">show</button></div>',
-      methods: {
-        showLog: function() {
-          eventBus.$emit('triggerEventBus', 100);
-        }
-      }
-    });
-
-    var app = new Vue({
-      el: '#app',
-      created: function() {
-        eventBus.$on('triggerEventBus', function(value) {
-          console.log("이벤트를 전달받음. 전달받은 값: ", value);
-        });
-      }
-    });
-
-  </script>
-```
+<script src="https://gist.github.com/degan85/17a79715ea92bdc8291538720758531d.js?file=eventbus.html"></script>
 
 ---
 

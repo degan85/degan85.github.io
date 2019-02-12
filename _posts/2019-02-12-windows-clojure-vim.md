@@ -10,28 +10,26 @@ comments: true
 ## Leiningen 
 
 윈도우용으로 다운로드
-[leiningen-win-installer](https://djpowell.github.io/leiningen-win-installer/)
+  [leiningen-win-installer](https://djpowell.github.io/leiningen-win-installer/)
 
 ---
 
 ## Vim
 
 * Vundle 이용해서 다음 플러그인들 설치
-    tpope/vim-fugitive
-    tpope/vim-fireplace.git
-    kien/rainbow_parentheses.vim
-    guns/vim-clojure-static
-    tpope/vim-salve
-    nrepl/piggieback
+    * tpope/vim-fugitive
+    * tpope/vim-fireplace.git
+    * kien/rainbow_parentheses.vim
+    * guns/vim-clojure-static
+    * tpope/vim-salve
+    * nrepl/piggieback
 
 * vimrc
+(Vundle 외 필요없는 부분들 생략)
 
 ```
-
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-"... 생략
+set nocompatible              
+filetype off                  
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-fireplace.git'
@@ -39,8 +37,6 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-salve'
 Plugin 'nrepl/piggieback'
-
-"...생략
 
 imap jk <ESC>
 
@@ -85,8 +81,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-
 ```  
 
 ---

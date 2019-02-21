@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Clojure 시퀀스1"
+author: Degan
+categories: clojure seq
+tags:   clojure lein seq	
+comments: true
+---
+
 ## 시퀀스 세가지 기본 특성
 
 ```clojure
@@ -113,5 +122,7 @@
 ```
 
 ---
+
+## Reference
 
 [Programming Clojure](http://www.yes24.com/Product/goods/3907543)

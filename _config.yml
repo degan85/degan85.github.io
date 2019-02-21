@@ -24,10 +24,10 @@ logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 paginate: 10
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlighter: rouge
 highlightjs_theme: "atom-one-light"
 # highlightjs_theme: "zenburn"
 

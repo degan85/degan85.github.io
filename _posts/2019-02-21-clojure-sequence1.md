@@ -9,7 +9,7 @@ comments: true
 
 ## 시퀀스 세가지 기본 특성
 
-```clojure
+~~~clojure
 (first '(1 2 3))
 ;1
 
@@ -21,7 +21,8 @@ comments: true
 
 (first {:fname "Stu" :lname "Halloway"})
 ;[:fname "Stu"]
-```
+~~~
+
  - conj와 다른 관련된 함수들이 자료구조의 내부 구현과 관련해 가장 효율적으로 선택
  - list는 맨 앞으로 삽입
 

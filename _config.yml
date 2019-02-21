@@ -3,6 +3,7 @@
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-rouge
 
 exclude:
   - "/vendor/"

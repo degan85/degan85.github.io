@@ -23,7 +23,7 @@ comments: true
 ### take-while 서술식을 컬렉션의 각 원소에 적용해서 거짓이 나타나기 전까지
 `(take-while pred coll)`
 
-'''clojure
+```clojure
 (take-while (complement #{\a\e\i\o\u}) "the-quick-brown-fox")
 ;(\t \h)
 ```

@@ -3,7 +3,6 @@
 gems:
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-rouge
 
 exclude:
   - "/vendor/"
@@ -24,18 +23,12 @@ cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
 # Build settings
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-# markdown: kramdown
+markdown: kramdown
 # highlighter: rouge
 paginate: 10
 paginate_path: "/page:num/"
 inter_post_navigation: false
-# highlightjs_theme: "atom-one-light"
+highlightjs_theme: "atom-one-light"
 # highlightjs_theme: "zenburn"
 
 

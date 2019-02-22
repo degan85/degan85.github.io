@@ -11,22 +11,8 @@ comments: true
 
 <script src="https://gist.github.com/degan85/c5b8d28ca9828ba71466d057cdc18679.js"></script>
 
-<script src="https://gist.github.com/degan85/c5b8d28ca9828ba71466d057cdc18679.js/sequence.clj
+<script src="https://gist.github.com/degan85/c5b8d28ca9828ba71466d057cdc18679.js?sequence.clj
 "></script>
-
-```
-(first '(1 2 3))
-;1
-
-(rest '(1 2 3))
-;(2 3)
-
-(cons 0 '(1 2 3))
-;(0 1 2 3)
-
-(first {:fname "Stu" :lname "Halloway"})
-;[:fname "Stu"]
-```
 
  - conj와 다른 관련된 함수들이 자료구조의 내부 구현과 관련해 가장 효율적으로 선택
  - list는 맨 앞으로 삽입

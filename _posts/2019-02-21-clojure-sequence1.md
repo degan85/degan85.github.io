@@ -9,8 +9,6 @@ comments: true
 
 ## 시퀀스 세가지 기본 특성
 
-<script src="https://gist.github.com/degan85/c5b8d28ca9828ba71466d057cdc18679.js"></script>
-
 <script src="https://gist.github.com/degan85/c5b8d28ca9828ba71466d057cdc18679.js?sequence.clj
 "></script>
 

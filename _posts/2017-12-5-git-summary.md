@@ -48,7 +48,7 @@ comments: true
 - Develop(개발 작업)
 - Feature(develop에서 파생, 여러개 작업, develop에 merge)
 
-![gitflow](https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAywAAAAJDkyMTNlNTY1LTliY2MtNDYyMy1hNGM4LWY4ZGI1NmFhN2NiNQ.png)
+![gitflow](https://media.licdn.com/dms/image/C5612AQGvRTTZ8t3tpA/article-inline_image-shrink_1500_2232/0?e=1556150400&v=beta&t=OHraoNh-n5nCx-QI3cz6yh9O5xeT-OXZFvZSKtPljxo)
 출처:[GitFlow: A Better Branching Strategy for Your Projects - Introduction to the Branching Model](https://www.linkedin.com/pulse/gitflow-better-branching-strategy-your-projects-model-kodagoda)
 
 ---

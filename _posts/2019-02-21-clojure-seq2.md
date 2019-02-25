@@ -2,7 +2,7 @@
 layout: post
 title:  "Clojure 시퀀스2"
 author: Degan
-categories: clojure seq
+categories: clojure
 tags:   clojure lein seq	
 comments: true
 ---

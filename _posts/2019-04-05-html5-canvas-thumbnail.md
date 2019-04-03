@@ -2,7 +2,7 @@
 layout: post
 title:  "Html5 canvas thumbnail"
 author: Degan
-categories: Html5
+categories: Html
 tags:   html5 canvas thumbnail	
 comments: true
 ---

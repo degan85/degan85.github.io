@@ -3,7 +3,7 @@ layout: post
 title:  “Docker mac에 설치 (sample schema 포함)
 date:   2021-08-11
 author: Degan
-categories: docker 
+categories: DOCKER
 tags: oracle Mac docker
 comments: true
 ---

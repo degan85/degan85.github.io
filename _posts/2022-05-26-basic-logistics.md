@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “물류 기초"
+title:  물류 기초
 date:   2022-05-26
 author: Degan
 categories: logistics

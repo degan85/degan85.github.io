@@ -55,14 +55,14 @@ comments: true
 - 현재는 flutter가 크게 높음 (2022/08/11 기준)
 
 ### 개발
-	- learning curve
-  	- 언어는 javascript를 사용하는 React Native가 익숙함
-  	- FLUTTER는 Dart를 새로 배워야함
-	- UI
-		- React Native는 bridge를 이용해서 그려서 때에따라 분기가 필요
-  		- OS에 따라 다를 수 있음
-		- FLUTTER는 C++로 작성된 그래픽엔진(Skia Engine)으로 자체적으로 canvas에 그림
-			- 플랫폼에 의존적이지 않음
+- learning curve
+  - 언어는 javascript를 사용하는 React Native가 익숙함
+  - FLUTTER는 Dart를 새로 배워야함
+- UI
+  - React Native는 bridge를 이용해서 그려서 때에따라 분기가 필요
+    - OS에 따라 다를 수 있음
+  - FLUTTER는 C++로 작성된 그래픽엔진(Skia Engine)으로 자체적으로 canvas에 그림
+    - 플랫폼에 의존적이지 않음
 
 ---
 

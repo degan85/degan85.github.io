@@ -69,4 +69,5 @@ comments: true
 ## Reference
 
 [모바일 앱 개발의 현재와 미래](https://youtu.be/2AS0WAOX8_8)
+
 [모바일 크로스플랫폼 Flutter vs React Native 차이가 뭘까?](https://velog.io/@sysout-achieve/%EB%AA%A8%EB%B0%94%EC%9D%BC-%ED%81%AC%EB%A1%9C%EC%8A%A4%ED%94%8C%EB%9E%AB%ED%8F%BCFlutter-vs-React-Native-%EC%B0%A8%EC%9D%B4%EA%B0%80-%EB%AD%98%EA%B9%8C)

@@ -12,7 +12,7 @@ comments: true
 ## 1. ssh key 생성
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "degan8535@gmail.com"
+ssh-keygen -t rsa -b 4096 -C <"내꺼email">
 ```
 
 ## 2. github에 key 등록

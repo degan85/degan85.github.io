@@ -11,7 +11,7 @@ tags: DOCKER 환경변수 env
 
 - docker-compose의 경우 따로 설정없이 
 - .env 파일에서 변수 사용 가능
-```json
+```
 KEY1=VALUE1
 MYSQL_ROOT_PASSWORD=VALUE2
 ```

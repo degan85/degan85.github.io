@@ -12,6 +12,7 @@ tags: DOCKER NETWORK CONTAINER
 - 실행중인 Docker Container 간의 통신을 위한 논리적 네트워크
 
 - 네트워크 조회
+
 ```bash
 docker network ls
 
@@ -22,12 +23,14 @@ docker network ls
 
 
 - 네트워크 생성
+
 ```bash
 docker network create ${network-name}
 # docker network create test-net
 ```
 
 - 네트워크 상세 정보
+
 ```bash
 docker network inspect ${network-name}
 # docker network inspect test-net
@@ -36,6 +39,7 @@ docker network inspect ${network-name}
 ```
 
 - 네트워크 컨테이너 연결 및 해제
+
 ```bash
 
 # 컨테이너 one이라는 이름으로 실행
@@ -93,6 +97,7 @@ docker network inspect test-net
 ```
 
 - ping으로 네트워킹 확인
+
 ```bash
 # one -> two container name으로 확인
 docker exec one ping two
@@ -111,8 +116,8 @@ docker exec two ping ${ip1}
 ```
 
 - 네트워크 제거
-```bash
 
+```bash
 # 컨테이너 중지
 docker stop one two
 
@@ -124,7 +129,9 @@ docker network prune
 ```
 
 ---
+
 ## Reference
-[Networking overview](https://docs.docker.com/network/)
-[Docker 네트워크 사용법](https://www.daleseo.com/docker-networks/)
+
+- [Networking overview](https://docs.docker.com/network/)
+- [Docker 네트워크 사용법](https://www.daleseo.com/docker-networks/)
 

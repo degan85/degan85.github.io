@@ -2,7 +2,7 @@
 layout: post
 title:  "JPA DomainClassConverter"
 author: Degan
-categories: spring boot 
+categories: springboot 
 comments: true
 tags: spring boot
 ---

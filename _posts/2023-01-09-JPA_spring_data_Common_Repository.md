@@ -2,7 +2,7 @@
 layout: post
 title:  "JPA spring data Common Repository"
 author: Degan
-categories: spring boot 
+categories: springboot 
 comments: true
 tags: spring boot
 ---

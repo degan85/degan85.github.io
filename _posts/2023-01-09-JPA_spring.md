@@ -2,7 +2,7 @@
 layout: post
 title:  "JPA 스프링 데이터 원리"
 author: Degan
-categories: spring boot 
+categories: springboot 
 comments: true
 tags: spring boot
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "HandlerMethodArgumentResolver"
 author: Degan
-categories: spring boot 
+categories: springboot 
 comments: true
 tags: spring boot
 ---
